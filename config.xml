@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.bsdmasterindex.phonegapsplashscreen-test"
+        version     = "1.0"
+        versionCode = "10" >
+        <!-- versionCode is optional and Android only -->
+        <preference name="phonegap-version" value="3.5.0" />
+
+        <name>Phonegap Splash Screen test</name>
+        <description>Splash Screen test.</description>
+        <author href="http://bsdmasterindex.com" email="jessemonroy650@yahoo.com">
+        Jesse Monroy
+        </author>
+        <gap:platform name="android" />
+        <preference name="permissions" value="none"/>
+
+		<preference name="SplashScreen" value="foo" />
+		<preference name="SplashScreenDelay" value="5000" />
+
+        <gap:plugin name="org.apache.cordova.splashscreen" />
+
+		<gap:splash src="res/screen/splashscreen-200x320-ldpi.png" gap:platform="android" gap:qualifier="port-ldpi" />
+		<gap:splash src="res/screen/splashscreen-320x480-mdpi.png" gap:platform="android" gap:qualifier="port-mdpi" />
+		<gap:splash src="res/screen/splashscreen-480x800-hdpi.png" gap:platform="android" gap:qualifier="port-hdpi" />
+		<gap:splash src="res/screen/splashscreen-720x1280-xhdpi.png" gap:platform="android" gap:qualifier="port-xhdpi" />
+
+    </widget>
+

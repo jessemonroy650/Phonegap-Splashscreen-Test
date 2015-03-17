@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>PhoneGap Network Information Test</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="buttons.css" />
+    <style>
+    body {margin:0px;font-size:large;}
+	.clear {clear:both;}
+	.hidden {visibility:collapse;display:none;}
+	.expose {visibility:visible;display:block;} // Here for completeness only.
+	.copyright {padding:5px;align:left;font-style:italic;font-size:small;}
+    </style>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript">
+    var my_media = null;
+    var mediaTimer = null;
+    // Wait for PhoneGap to load
+	document.addEventListener("deviceready", onDeviceReady, false);
+	//
+	function splash(time) {
+		navigator.splashscreen.show();
+		setTimeout(function() {
+			navigator.splashscreen.hide();
+		}, time);
+	}
+	//
+	function onDeviceReady() {
+		thePlace = document.getElementById('splash');
+		thePlace.addEventListener('click', function(e) {
+				//alert('got click');
+				splash(3000);
+			});
+	}
+	//
+	function onLoad() {
+		// NOTE: 2015-03-16, currently now way to check this a browser.
+		/*
+		thePlace = document.getElementById('splash');
+		thePlace.addEventListener('click', function(e) {
+				//alert('got click');
+				splash(3000);
+			});
+		*/
+	}
+
+    </script>
+</head>
+<body onload="onLoad()">
+<div class="button button-block button-large"><img align=left src=favicon-48x48.png>Splash Screen</div>
+<span onclick='navigator.app.exitApp()' style="float:right;"><button class="button button-pill button-primary button-large" style="margin:1em;">Exit</button></span>
+<p class=clear />
+
+<center>
+	<div id=splash class="button button-pill button-action button-large" style="margin:1em;">Splash</div>
+</center>
+
+<div class="copyright" style="padding:5px;align:left;font-style:italic;font-size:small;">
+    <span id=copyright>Created by Jesus Monroy, Jr. &copy; 2015</span>
+</div>
+</body>
+</html>
