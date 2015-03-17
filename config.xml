@@ -15,7 +15,7 @@
         <gap:platform name="android" />
         <preference name="permissions" value="none"/>
 
-		<preference name="SplashScreen" value="foo" />
+		<preference name="SplashScreen" value="splash" />
 		<preference name="SplashScreenDelay" value="5000" />
 
         <gap:plugin name="org.apache.cordova.splashscreen" />
