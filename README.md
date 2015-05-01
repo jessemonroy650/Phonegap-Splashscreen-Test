@@ -2,11 +2,10 @@
 A simple test of Phonegaps's Splash Screen API.
 
 **Platforms Implemented Here**
-* Android
-* iOS
+* Android (Sizes:200x320-ldpi, 320x480-mdpi, 480x800-hdpi, 720x1280-xhdpi)
+* iOS (iPhone 320x480-portrait, 640x960-portrait-2x,  640x1136-portrait-568h-2x; iPad 768x1024-portrait, 1024x768-landscape)
 
-
-Supported Platforms | Yes (X), No (-) or Quirk (Q)
+Phonegap Supported Platforms | Yes (X), No (-) or Quirk (Q)
 --------------------|-----------------------------
 Amazon Fire OS | X 
 Android | X
@@ -27,5 +26,5 @@ Phonegap calls these "Quirks".
 Platforms | Quirk
 ----------|------
 BlackBerry 10 | The config.xml file's AutoHideSplashScreen setting must be false.
-iOS | The config.xml file's AutoHideSplashScreen setting must be false. To delay hiding the splash screen for two seconds, add a timer such as the following in the deviceready event handler:
+iOS | The config.xml file's AutoHideSplashScreen setting must be false. SEE Documents for more details.
 
