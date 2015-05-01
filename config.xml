@@ -29,5 +29,10 @@
 		<gap:splash src="res/screen/splashscreen-480x800-hdpi.png" gap:platform="android" gap:qualifier="port-hdpi" />
 		<gap:splash src="res/screen/splashscreen-720x1280-xhdpi.png" gap:platform="android" gap:qualifier="port-xhdpi" />
 
+		<gap:splash src="res/screen/splashscreen-320x480.png"  gap:platform="ios" width="320" height="480" />
+		<gap:splash src="res/screen/splashscreen-640x960.png"  gap:platform="ios" width="640" height="960" />
+		<gap:splash src="res/screen/splashscreen-640x136.png"  gap:platform="ios" width="640" height="1136" />
+		<gap:splash src="res/screen/splashscreen-768x1024.png" gap:platform="ios" width="768" height="1024" />
+		<gap:splash src="res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768" />
     </widget>
 
