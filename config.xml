@@ -19,6 +19,7 @@
 
 		<preference name="SplashScreen" value="splash" />
 		<preference name="SplashScreenDelay" value="5000" />
+		<preference name="auto-hide-splash-screen" value="false" />  <!-- iOS -->
 
         <gap:plugin name="org.apache.cordova.splashscreen" />
 

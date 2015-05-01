@@ -17,7 +17,7 @@ Windows Phone 7 and 8 | X
 Windows 8 | X
 
 #### CLI and API ####
-From: http://docs.phonegap.com/en/3.3.0/cordova_splashscreen_splashscreen.md.html#Splashscreen
+From: https://github.com/apache/cordova-plugin-splashscreen/
 
 #### config.xml ####
 From: https://github.com/phonegap/phonegap-start/blob/master/www/config.xml
