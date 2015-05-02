@@ -11,6 +11,14 @@ http://plugins.cordova.io/#/package/org.apache.cordova.splashscreen
 * iOS (iPad 768x1024-portrait, 1024x768-landscape)
 * **NOTE** I have not tested all sizes.
 
+My Devices           |  Size             | OS version
+---------------------|-------------------|------
+iPodTouch            | 640x1136-portrait | 8.3
+Huawei-M931          | 480x800-hdpi      | 4.0.4
+Samsung GT-P3113     | 320x480-mdpi      | 4.2.2
+Sprout Channel Cubby | 320x480-mdpi      | 4.4.2
+Samsung SCH-R720     | 320x480-mdpi      | 2.3.4
+
 ####Reference for iOS devices and screen sizes####
 http://www.idev101.com/code/User_Interface/launchImages.html
 
