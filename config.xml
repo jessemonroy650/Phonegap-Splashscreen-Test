@@ -23,6 +23,7 @@
 		<preference name="SplashScreen" value="splash" />
 		<preference name="SplashScreenDelay" value="5000" />
 		<preference name="auto-hide-splash-screen" value="false" />  <!-- iOS -->
+		<preference name="show-splash-screen-spinner" value="false" />  <!-- iOS -->
 
 		<gap:splash src="splash.png" />
 		<gap:splash src="res/screen/splashscreen-200x320-ldpi.png" gap:platform="android" gap:qualifier="port-ldpi" />
