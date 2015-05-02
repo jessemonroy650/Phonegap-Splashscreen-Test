@@ -26,6 +26,13 @@
 	}
 	//
 	function onDeviceReady() {
+		// Work-around iOS Quirk
+		if (device.platform === "iOS") {
+			setTimeout(function() {
+        		navigator.splashscreen.hide();
+			}, 2000);
+		};
+		// Setup the button click
 		thePlace = document.getElementById('splash');
 		thePlace.addEventListener('click', function(e) {
 				//alert('got click');
@@ -34,14 +41,6 @@
 	}
 	//
 	function onLoad() {
-		// NOTE: 2015-03-16, currently no way to check this a browser.
-		/*
-		thePlace = document.getElementById('splash');
-		thePlace.addEventListener('click', function(e) {
-				//alert('got click');
-				splash(3000);
-			});
-		*/
 	}
 
     </script>

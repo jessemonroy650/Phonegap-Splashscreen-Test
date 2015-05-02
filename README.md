@@ -1,6 +1,8 @@
 # Phonegap-Splashscreen-Test
 A simple test of Phonegaps's Splash Screen API.
 
+http://plugins.cordova.io/#/package/org.apache.cordova.splashscreen
+
 **Platforms Implemented Here**
 * Android (Sizes:200x320-ldpi, 320x480-mdpi, 480x800-hdpi, 720x1280-xhdpi)
 

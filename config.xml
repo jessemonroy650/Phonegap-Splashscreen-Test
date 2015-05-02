@@ -15,16 +15,16 @@
         <gap:platform name="android" />
 		<gap:platform name="ios" />
 
+
         <preference name="permissions" value="none"/>
+        <gap:plugin name="org.apache.cordova.splashscreen" />
+        <gap:plugin name="org.apache.cordova.device" />
 
 		<preference name="SplashScreen" value="splash" />
 		<preference name="SplashScreenDelay" value="5000" />
 		<preference name="auto-hide-splash-screen" value="false" />  <!-- iOS -->
 
-        <gap:plugin name="org.apache.cordova.splashscreen" />
-
 		<gap:splash src="splash.png" />
-
 		<gap:splash src="res/screen/splashscreen-200x320-ldpi.png" gap:platform="android" gap:qualifier="port-ldpi" />
 		<gap:splash src="res/screen/splashscreen-320x480-mdpi.png" gap:platform="android" gap:qualifier="port-mdpi" />
 		<gap:splash src="res/screen/splashscreen-480x800-hdpi.png" gap:platform="android" gap:qualifier="port-hdpi" />
@@ -36,4 +36,3 @@
 		<gap:splash src="res/screen/splashscreen-768x1024.png" gap:platform="ios" width="768" height="1024" />
 		<gap:splash src="res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768" />
     </widget>
-
