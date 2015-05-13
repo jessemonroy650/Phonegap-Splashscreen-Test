@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="buttons.css" />
     <style>
     body {margin:0px;font-size:large;}
-	.clear {clear:both;}
-	.hidden {visibility:collapse;display:none;}
-	.expose {visibility:visible;display:block;} // Here for completeness only.
-	.copyright {padding:5px;align:left;font-style:italic;font-size:small;}
+    .clear {clear:both;}
+    .hidden {visibility:collapse;display:none;}
+    .expose {visibility:visible;display:block;} /* Here for completeness only. */
+    .copyright {padding:5px;align:left;font-style:italic;font-size:small;}
+    #exitApp {margin:1em;}
     </style>
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript">
@@ -29,10 +30,9 @@
 		// hide Exit button. They don't have one on iOS devices.
 		if (device.platform === "iOS") {
 			//alert("got iOS");
-			$("#exitApp").addClass("hidden");
-		}
-		// Work-around iOS Quirk
-		if (device.platform === "iOS") {
+			// http://www.mzcart.com/javascript-how-to-addremove-css-class-from-a-dom-element/
+			document.getElementById('exitApp').classList.add("hidden");
+			// Work-around iOS Quirk
 			setTimeout(function() {
         		navigator.splashscreen.hide();
 			}, 2000);
@@ -52,7 +52,9 @@
 </head>
 <body onload="onLoad()">
 <div class="button button-block button-large"><img align=left src=favicon-48x48.png>Splash Screen</div>
-<span onclick='navigator.app.exitApp()' style="float:right;"><button id=exitApp class="button button-pill button-primary button-large" style="margin:1em;">Exit</button></span>
+
+<button id=exitApp onclick='navigator.app.exitApp()' class="button button-pill button-primary button-large">Exit</button>
+
 <p class=clear />
 
 <center>
