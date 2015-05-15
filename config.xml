@@ -29,27 +29,27 @@
 		<preference name="show-splash-screen-spinner" value="false" />  <!-- iOS -->
 
 		<!-- ANDROID * ANDROID * ANDROID -->
+        <icon src="res/drawable-ldpi/icon_48x48_ldpi.png"  gap:platform="android" gap:qualifier="ldpi" />
+        <icon src="res/drawable-mdpi/icon_48x48_mdpi.png"  gap:platform="android" gap:qualifier="mdpi" />
+        <icon src="res/drawable-hdpi/icon_72x72_hdpi.png"  gap:platform="android" gap:qualifier="hdpi" />
+        <icon src="res/drawable-xhdpi/icon_96x96_xhpdi.png" gap:platform="android" gap:qualifier="xhdpi" />
+
 		<gap:splash src="splash.png" /> <!-- I have not found any documentation for this, but it appears deprecated -->
-		<gap:splash src="res/android/splashscreen-200x320-ldpi.png" gap:platform="android" gap:qualifier="port-ldpi" />
-		<gap:splash src="res/android/splashscreen-320x480-mdpi.png" gap:platform="android" gap:qualifier="port-mdpi" />
-		<gap:splash src="res/android/splashscreen-480x800-hdpi.png" gap:platform="android" gap:qualifier="port-hdpi" />
+		<gap:splash src="res/android/splashscreen-200x320-ldpi.png"   gap:platform="android" gap:qualifier="port-ldpi" />
+		<gap:splash src="res/android/splashscreen-320x480-mdpi.png"   gap:platform="android" gap:qualifier="port-mdpi" />
+		<gap:splash src="res/android/splashscreen-480x800-hdpi.png"   gap:platform="android" gap:qualifier="port-hdpi" />
 		<gap:splash src="res/android/splashscreen-720x1280-xhdpi.png" gap:platform="android" gap:qualifier="port-xhdpi" />
 
-        <icon src="res/android/icon_48x48_ldpi.png"  gap:platform="android" gap:qualifier="ldpi" />
-        <icon src="res/android/icon_48x48_mdpi.png"  gap:platform="android" gap:qualifier="mdpi" />
-        <icon src="res/android/icon_72x72_hdpi.png"  gap:platform="android" gap:qualifier="hdpi" />
-        <icon src="res/android/icon_96x96_xhpdi.png" gap:platform="android" gap:qualifier="xhdpi" />
-
 		<!-- iOS * iOS * iOS -->
-		<gap:splash src="res/ios/splashscreen~iphone-320x480"              gap:platform="ios" width="320" height="480" />
-		<gap:splash src="res/ios/splashscreen~iphone-640x960.png"          gap:platform="ios" width="640" height="960" />
-		<gap:splash src="res/ios/splashscreen~iphone-640x1136.png"         gap:platform="ios" width="640" height="1136" />
-		<gap:splash src="res/ios/splashscreen-portrait~ipad-768x1024.png"  gap:platform="ios" width="768" height="1024" />
-		<gap:splash src="res/ios/splashscreen-landscape~ipad-1024x768.png" gap:platform="ios" width="1024" height="768" />
-
         <icon src="res/ios/icon_57x57.png"   gap:platform="ios" width="57" height="57" />
         <icon src="res/ios/icon_76x76.png"   gap:platform="ios" width="76" height="76" />
         <icon src="res/ios/icon_120x120.png" gap:platform="ios" width="120" height="120" />
         <icon src="res/ios/icon_152x152.png" gap:platform="ios" width="152" height="152" />
         <icon src="res/ios/icon_180x180.png" gap:platform="ios" width="180" height="180" />
+
+		<gap:splash src="res/ios/splashscreen~iphone-320x480"              gap:platform="ios" width="320" height="480" />
+		<gap:splash src="res/ios/splashscreen~iphone-640x960.png"          gap:platform="ios" width="640" height="960" />
+		<gap:splash src="res/ios/splashscreen~iphone-640x1136.png"         gap:platform="ios" width="640" height="1136" />
+		<gap:splash src="res/ios/splashscreen-portrait~ipad-768x1024.png"  gap:platform="ios" width="768" height="1024" />
+		<gap:splash src="res/ios/splashscreen-landscape~ipad-1024x768.png" gap:platform="ios" width="1024" height="768" />
     </widget>
