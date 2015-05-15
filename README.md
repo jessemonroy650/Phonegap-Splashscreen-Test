@@ -32,7 +32,7 @@ This article suggests your can give the images any filename you want. When I fin
 Phonegap Supported Platforms | Yes (X), No (-) or Quirk (Q)
 --------------------|-----------------------------
 Amazon Fire OS | X 
-Android | X
+Android | Q
 BlackBerry 10 | Q
 iOS | Q
 Windows Phone 7 and 8 | X
