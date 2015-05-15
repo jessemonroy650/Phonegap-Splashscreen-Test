@@ -29,6 +29,9 @@
 		<preference name="show-splash-screen-spinner" value="false" />  <!-- iOS -->
 
 		<!-- ANDROID * ANDROID * ANDROID -->
+		<!-- the subdirectory 'drawable' is somehow tie via the AndoidManifest.xml -->
+		<!-- according to: http://tekeye.biz/2013/android-icon-size -->
+		<!-- NOTE: This cause an error with the iOS icons as well. -->
         <icon src="res/drawable-ldpi/icon_48x48_ldpi.png"  gap:platform="android" gap:qualifier="ldpi" />
         <icon src="res/drawable-mdpi/icon_48x48_mdpi.png"  gap:platform="android" gap:qualifier="mdpi" />
         <icon src="res/drawable-hdpi/icon_72x72_hdpi.png"  gap:platform="android" gap:qualifier="hdpi" />
