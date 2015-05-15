@@ -8,7 +8,7 @@
         <preference name="phonegap-version" value="3.5.0" />
 
         <name>Phonegap Splash Screen test</name>
-        <description>Splash Screen & Icon test</description>
+        <description>Splash Screen and Icon test</description>
         <author href="http://bsdmasterindex.com" email="jessemonroy650@yahoo.com">
         Jesse Monroy
         </author>
