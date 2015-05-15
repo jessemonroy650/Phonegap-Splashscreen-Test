@@ -51,5 +51,5 @@ Platforms | Quirk
 ----------|------
 Android | The pathname components of the icon are tied via AndriodManifest.xml and config.xml. See: http://tekeye.biz/2013/android-icon-size
 BlackBerry 10 | The config.xml file's AutoHideSplashScreen setting must be false.
-iOS | The config.xml file's AutoHideSplashScreen setting must be false. SEE Documents for more details.
+iOS | The config.xml file's AutoHideSplashScreen setting must be false. SEE Phonegap documents for more details.
 
