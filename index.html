@@ -11,13 +11,17 @@
     .expose {visibility:visible;display:block;} /* Here for completeness only. */
     .copyright {padding:5px;align:left;font-style:italic;font-size:small;}
     #exitApp {margin:1em;}
+	#header {margin:0;padding:0;}
     </style>
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="fastclick.js"></script>
     <script type="text/javascript">
     var my_media = null;
     var mediaTimer = null;
     // Wait for PhoneGap to load
 	document.addEventListener("deviceready", onDeviceReady, false);
+	// Get rid of 300ms delay 
+	document.addEventListener('DOMContentLoaded', function() { FastClick.attach(document.body); }, false);
 	//
 	function splash(time) {
 		navigator.splashscreen.show();
@@ -32,6 +36,9 @@
 			//alert("got iOS");
 			// http://www.mzcart.com/javascript-how-to-addremove-css-class-from-a-dom-element/
 			document.getElementById('exitApp').classList.add("hidden");
+			/* deals with post-iOS-7 change that covers the status bar */
+			/* http://coenraets.org/blog/2013/09/phonegap-and-cordova-with-ios-7/ */
+            document.body.style.marginTop = "20px";
 			// Work-around iOS Quirk
 			setTimeout(function() {
         		navigator.splashscreen.hide();
@@ -51,7 +58,7 @@
     </script>
 </head>
 <body onload="onLoad()">
-<div class="button button-block button-large"><img align=left src=favicon-48x48.png>Splash Screen</div>
+<div id=header class="button button-block button-large"><img align=left src=favicon-48x48.png>Splash Screen</div>
 
 <button id=exitApp onclick='navigator.app.exitApp()' class="button button-pill button-primary button-large">Exit</button>
 
