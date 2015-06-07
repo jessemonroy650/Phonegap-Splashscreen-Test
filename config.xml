@@ -13,46 +13,47 @@
         Jesse Monroy
         </author>
         <gap:platform name="android" />
-		<gap:platform name="ios" />
+        <gap:platform name="ios" />
 
         <preference name="permissions" value="none"/>
-		<!-- PHONEGAP Master Example: https://github.com/phonegap/phonegap-start/blob/master/www/config.xml -->
-		<!-- device required so we can detect if we are using iOS -->
+        <!-- PHONEGAP Master Example: https://github.com/phonegap/phonegap-start/blob/master/www/config.xml -->
+        <!-- device required so we can detect if we are using iOS -->
         <gap:plugin name="org.apache.cordova.device" />
         <gap:plugin name="org.apache.cordova.splashscreen" />
 
-		<!-- ANDROID * ANDROID * ANDROID -->
-		<preference name="SplashScreen" value="splash" />
-		<preference name="SplashScreenDelay" value="5000" />
-		<!-- iOS * iOS * iOS -->
-		<preference name="auto-hide-splash-screen" value="false" />  <!-- iOS -->
-		<preference name="show-splash-screen-spinner" value="false" />  <!-- iOS -->
+        <!-- ANDROID * ANDROID * ANDROID -->
+        <preference name="SplashScreen" value="splash" />
+        <preference name="SplashScreenDelay" value="5000" />
+        <!-- iOS * iOS * iOS -->
+        <preference name="auto-hide-splash-screen" value="false" />  <!-- iOS -->
+        <preference name="show-splash-screen-spinner" value="false" />  <!-- iOS -->
 
-		<!-- ANDROID * ANDROID * ANDROID -->
-		<!-- the subdirectory 'drawable' is somehow tie via the AndoidManifest.xml -->
-		<!-- according to: http://tekeye.biz/2013/android-icon-size -->
-		<!-- NOTE: This cause an error with the iOS icons as well. -->
+        <!-- ANDROID * ANDROID * ANDROID -->
+        <!-- the subdirectory 'drawable' is somehow tie via the AndoidManifest.xml -->
+        <!-- according to: http://tekeye.biz/2013/android-icon-size -->
+        <!-- NOTE: This cause an error with the iOS icons as well. -->
         <icon src="res/drawable-ldpi/icon_48x48_ldpi.png"  gap:platform="android" gap:qualifier="ldpi" />
         <icon src="res/drawable-mdpi/icon_48x48_mdpi.png"  gap:platform="android" gap:qualifier="mdpi" />
         <icon src="res/drawable-hdpi/icon_72x72_hdpi.png"  gap:platform="android" gap:qualifier="hdpi" />
         <icon src="res/drawable-xhdpi/icon_96x96_xhpdi.png" gap:platform="android" gap:qualifier="xhdpi" />
 
-		<gap:splash src="splash.png" /> <!-- I have not found any documentation for this, but it appears deprecated -->
-		<gap:splash src="res/android/splashscreen-200x320-ldpi.png"   gap:platform="android" gap:qualifier="port-ldpi" />
-		<gap:splash src="res/android/splashscreen-320x480-mdpi.png"   gap:platform="android" gap:qualifier="port-mdpi" />
-		<gap:splash src="res/android/splashscreen-480x800-hdpi.png"   gap:platform="android" gap:qualifier="port-hdpi" />
-		<gap:splash src="res/android/splashscreen-720x1280-xhdpi.png" gap:platform="android" gap:qualifier="port-xhdpi" />
+        <gap:splash src="splash.png" /> <!-- I have not found any documentation for this, but it appears deprecated -->
+        <gap:splash src="res/android/splashscreen-200x320-ldpi.png"   gap:platform="android" gap:qualifier="port-ldpi" />
+        <gap:splash src="res/android/splashscreen-320x480-mdpi.png"   gap:platform="android" gap:qualifier="port-mdpi" />
+        <gap:splash src="res/android/splashscreen-480x800-hdpi.png"   gap:platform="android" gap:qualifier="port-hdpi" />
+        <gap:splash src="res/android/splashscreen-720x1280-xhdpi.png" gap:platform="android" gap:qualifier="port-xhdpi" />
 
-		<!-- iOS * iOS * iOS -->
+        <!-- iOS * iOS * iOS -->
         <icon src="res/ios/icon_57x57.png"   gap:platform="ios" width="57" height="57" />
         <icon src="res/ios/icon_76x76.png"   gap:platform="ios" width="76" height="76" />
         <icon src="res/ios/icon_120x120.png" gap:platform="ios" width="120" height="120" />
         <icon src="res/ios/icon_152x152.png" gap:platform="ios" width="152" height="152" />
         <icon src="res/ios/icon_180x180.png" gap:platform="ios" width="180" height="180" />
 
-		<gap:splash src="res/ios/splashscreen~iphone-320x480"              gap:platform="ios" width="320" height="480" />
-		<gap:splash src="res/ios/splashscreen~iphone-640x960.png"          gap:platform="ios" width="640" height="960" />
-		<gap:splash src="res/ios/splashscreen~iphone-640x1136.png"         gap:platform="ios" width="640" height="1136" />
-		<gap:splash src="res/ios/splashscreen-portrait~ipad-768x1024.png"  gap:platform="ios" width="768" height="1024" />
-		<gap:splash src="res/ios/splashscreen-landscape~ipad-1024x768.png" gap:platform="ios" width="1024" height="768" />
+        <gap:splash src="res/ios/splashscreen~iphone-320x480"                gap:platform="ios" width="320" height="480" />
+        <gap:splash src="res/ios/splashscreen~iphone-640x960.png"            gap:platform="ios" width="640" height="960" />
+        <gap:splash src="res/ios/splashscreen~iphone-640x1136.png"           gap:platform="ios" width="640" height="1136" />
+        <gap:splash src="res/ios/splashscreen-landscape~iphone-1136x640.png" gap:platform="ios" width="1136" height="640" />
+        <gap:splash src="res/ios/splashscreen-portrait~ipad-768x1024.png"    gap:platform="ios" width="768" height="1024" />
+        <gap:splash src="res/ios/splashscreen-landscape~ipad-1024x768.png"   gap:platform="ios" width="1024" height="768" />
     </widget>
