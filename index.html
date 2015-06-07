@@ -11,7 +11,7 @@
     .expose {visibility:visible;display:block;} /* Here for completeness only. */
     .copyright {padding:5px;align:left;font-style:italic;font-size:small;}
     #exitApp {margin:1em;}
-	#header {margin:0;padding:0;}
+    #header {margin:0;padding:0;}
     </style>
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8" src="fastclick.js"></script>
@@ -23,38 +23,38 @@
 	// Get rid of 300ms delay 
 	document.addEventListener('DOMContentLoaded', function() { FastClick.attach(document.body); }, false);
 	//
-	function splash(time) {
-		navigator.splashscreen.show();
-		setTimeout(function() {
-			navigator.splashscreen.hide();
-		}, time);
-	}
-	//
-	function onDeviceReady() {
-		// hide Exit button. They don't have one on iOS devices.
-		if (device.platform === "iOS") {
-			//alert("got iOS");
-			// http://www.mzcart.com/javascript-how-to-addremove-css-class-from-a-dom-element/
-			document.getElementById('exitApp').classList.add("hidden");
-			/* deals with post-iOS-7 change that covers the status bar */
-			/* http://coenraets.org/blog/2013/09/phonegap-and-cordova-with-ios-7/ */
+    function splash(time) {
+        navigator.splashscreen.show();
+        setTimeout(function() {
+                navigator.splashscreen.hide();
+            },
+            time);
+    }
+    //
+    function onDeviceReady() {
+        // hide Exit button. They don't have one on iOS devices.
+        if (device.platform === "iOS") {
+            //alert("got iOS");
+            // http://www.mzcart.com/javascript-how-to-addremove-css-class-from-a-dom-element/
+            document.getElementById('exitApp').classList.add("hidden");
+            /* deals with post-iOS-7 change that covers the status bar */
+            /* http://coenraets.org/blog/2013/09/phonegap-and-cordova-with-ios-7/ */
             document.body.style.marginTop = "20px";
-			// Work-around iOS Quirk
-			setTimeout(function() {
-        		navigator.splashscreen.hide();
-			}, 2000);
-		};
-		// Setup the button click
-		thePlace = document.getElementById('splash');
-		thePlace.addEventListener('click', function(e) {
-				//alert('got click');
-				splash(3000);
-			});
+            // Work-around iOS Quirk
+            setTimeout(function() {
+                navigator.splashscreen.hide();
+            }, 2000);
+        };
+        // Setup the button click
+        thePlace = document.getElementById('splash');
+        thePlace.addEventListener('click', function(e) {
+                //alert('got click');
+                splash(3000);
+            });
 	}
-	//
-	function onLoad() {
-	}
-
+    //
+    function onLoad() {
+    }
     </script>
 </head>
 <body onload="onLoad()">
