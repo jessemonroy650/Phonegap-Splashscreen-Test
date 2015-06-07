@@ -53,6 +53,7 @@
         <gap:splash src="res/ios/splashscreen~iphone-320x480"                gap:platform="ios" width="320" height="480" />
         <gap:splash src="res/ios/splashscreen~iphone-640x960.png"            gap:platform="ios" width="640" height="960" />
         <gap:splash src="res/ios/splashscreen~iphone-640x1136.png"           gap:platform="ios" width="640" height="1136" />
+        <!-- landscape not supported at this time: 2015-06-07. Already reported see NOTES -->
         <gap:splash src="res/ios/splashscreen-landscape~iphone-1136x640.png" gap:platform="ios" width="1136" height="640" />
         <gap:splash src="res/ios/splashscreen-portrait~ipad-768x1024.png"    gap:platform="ios" width="768" height="1024" />
         <gap:splash src="res/ios/splashscreen-landscape~ipad-1024x768.png"   gap:platform="ios" width="1024" height="768" />
