@@ -16,6 +16,10 @@ https://github.com/phonegap/phonegap/wiki/App-Splash-Screen-Sizes
 ## BUGS ##
 Date: 2015-07-16
 
+*UNSUPPORTED: Platform element is not supported - #445 - Feature Request*
+* https://github.com/phonegap/build/issues/445
+* June 2015
+
 *[Docs] Fix Icons and Splash Screens src relative path - #388*
 * https://github.com/phonegap/build/issues/388
 * December 2014
