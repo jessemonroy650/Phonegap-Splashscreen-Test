@@ -18,7 +18,7 @@ Date: 2015-07-16
 
 *UNSUPPORTED: Platform element is not supported - #445 - Feature Request*
 * https://github.com/phonegap/build/issues/445
-* June 2015
+* June 2015 - Windows 8 needs better support
 
 *[Docs] Fix Icons and Splash Screens src relative path - #388*
 * https://github.com/phonegap/build/issues/388
