@@ -19,10 +19,10 @@
     var my_media = null;
     var mediaTimer = null;
     // Wait for PhoneGap to load
-	document.addEventListener("deviceready", onDeviceReady, false);
-	// Get rid of 300ms delay 
-	document.addEventListener('DOMContentLoaded', function() { FastClick.attach(document.body); }, false);
-	//
+    document.addEventListener("deviceready", onDeviceReady, false);
+    // Get rid of 300ms delay 
+    document.addEventListener('DOMContentLoaded', function() { FastClick.attach(document.body); }, false);
+    //
     function splash(time) {
         navigator.splashscreen.show();
         setTimeout(function() {
@@ -51,7 +51,7 @@
                 //alert('got click');
                 splash(3000);
             });
-	}
+    }
     //
     function onLoad() {
     }
@@ -65,7 +65,7 @@
 <p class=clear />
 
 <center>
-	<div id=splash class="button button-pill button-action button-large" style="margin:1em;">Splash</div>
+    <div id=splash class="button button-pill button-action button-large" style="margin:1em;">Splash</div>
 </center>
 
 <div class="copyright" style="padding:5px;align:left;font-style:italic;font-size:small;">

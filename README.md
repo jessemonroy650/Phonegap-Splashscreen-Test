@@ -3,9 +3,16 @@ A simple test of Phonegaps's Splash Screen and Icons API.
 
 This App now loads the icons and the splash screen, as of 2015-05-14.
 
+### Splash Screens are Evil, Don't Use Them! - Cyril Mottier ###
+http://cyrilmottier.com/2012/05/03/splash-screens-are-evil-dont-use-them/
+
 Phonegap Reference
 
 http://plugins.cordova.io/#/package/org.apache.cordova.splashscreen
+
+**BUGS - BUGS**
+
+There are many, many bugs, see NOTES.md
 
 **Platforms Implemented Here**
 * Android (Sizes:200x320-ldpi, 320x480-mdpi, 480x800-hdpi, 720x1280-xhdpi)

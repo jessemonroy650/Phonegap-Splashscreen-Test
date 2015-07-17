@@ -1,19 +1,35 @@
-= NOTES =
+# NOTES #
 Date: 2015-03-16
 
-== Docs ==
+## Docs ##
 
 https://github.com/apache/cordova-plugin-splashscreen/
 
-== Reference for config.xml ==
+## Reference for config.xml ##
 
 https://github.com/phonegap/phonegap-start/blob/master/www/config.xml
 
-== Sizes =
+## Sizes ##
 
 https://github.com/phonegap/phonegap/wiki/App-Splash-Screen-Sizes
 
-== BUGS ==
+## BUGS ##
+Date: 2015-07-16
+
+*[Docs] Fix Icons and Splash Screens src relative path - #388*
+* https://github.com/phonegap/build/issues/388
+* December 2014
+
+*Config.xml preferences are PhoneGapBuild only or obsolete - #151*
+* https://github.com/phonegap/phonegap-start/issues/151
+* June 2014
+
+*Incorrect config.xml Global Preferences - CB-6182*
+* https://issues.apache.org/jira/browse/CB-6182
+* March 2014
+* 2 of 3 related bugs fixed, fix include 'orientation' - April 2014
+
+----
 Date: 2015-06-07
 Landscape not working on several iOS devices. It seems to be as much because those sizes are not described in either the documentation nor the example ''config.xml'' provide by phonegap.
 
@@ -27,7 +43,7 @@ https://github.com/phonegap/build/issues/411
 https://issues.apache.org/jira/browse/CB-8272 (cordova)
 
 ----
-Date: Date: 2015-03-16
+Date: 2015-03-16
 * did not work on first try, documentation on phonegap is incomplete
 
 phonegap dont show splashscreen
