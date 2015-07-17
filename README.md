@@ -12,7 +12,7 @@ http://plugins.cordova.io/#/package/org.apache.cordova.splashscreen
 
 **BUGS - BUGS**
 
-There are many, many bugs, see NOTES.md
+There are many, many bugs, see [NOTES.md](https://github.com/jessemonroy650/Phonegap-Splashscreen-Test/blob/master/NOTES.md)
 
 **Platforms Implemented Here**
 * Android (Sizes:200x320-ldpi, 320x480-mdpi, 480x800-hdpi, 720x1280-xhdpi)
