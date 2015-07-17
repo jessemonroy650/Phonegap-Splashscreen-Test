@@ -12,7 +12,7 @@ http://plugins.cordova.io/#/package/org.apache.cordova.splashscreen
 
 **BUGS - BUGS**
 
-There are many, many bugs, see [NOTES.md](https://github.com/jessemonroy650/Phonegap-Splashscreen-Test/blob/master/NOTES.md)
+There are many, many bugs, see [NOTES.md](NOTES.md)
 
 **Platforms Implemented Here**
 * Android (Sizes:200x320-ldpi, 320x480-mdpi, 480x800-hdpi, 720x1280-xhdpi)
@@ -59,4 +59,4 @@ Platforms | Quirk
 Android | The pathname components of the icon are tied via AndriodManifest.xml and config.xml. See: http://tekeye.biz/2013/android-icon-size
 BlackBerry 10 | The config.xml file's AutoHideSplashScreen setting must be false.
 iOS | The config.xml file's AutoHideSplashScreen setting must be false. SEE Phonegap documents for more details.
-
+Windows 8 | has issues see [NOTES](NOTES.md)
