@@ -15,6 +15,11 @@ https://github.com/phonegap/phonegap/wiki/App-Splash-Screen-Sizes
 
 ## BUGS ##
 Date: 2015-07-16
+Updated: 2015-08-01
+
+*PhoneGap 3.6 and Icon Path Issues #522
+* https://github.com/phonegap/phonegap-cli/issues/522
+* Mar 20 2015 - This issue mostly affects Phonegap CLI and not so much Build 
 
 *UNSUPPORTED: Platform element is not supported - #445 - Feature Request*
 * https://github.com/phonegap/build/issues/445
