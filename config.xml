@@ -2,7 +2,7 @@
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.bsdmasterindex.phonegapsplashscreen-test"
-        version     = "1.1.1"
+        version     = "1.1.2"
         versionCode = "10" >
         <!-- versionCode is optional and Android only -->
         <preference name="phonegap-version" value="3.5.0" />
@@ -18,8 +18,8 @@
         <preference name="permissions" value="none"/>
         <!-- PHONEGAP Master Example: https://github.com/phonegap/phonegap-start/blob/master/www/config.xml -->
         <!-- device required so we can detect if we are using iOS -->
-        <gap:plugin name="org.apache.cordova.device" />
-        <gap:plugin name="org.apache.cordova.splashscreen" />
+        <gap:plugin name="org.apache.cordova.device" version="0.2.12" />
+        <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
 
         <!-- ANDROID * ANDROID * ANDROID -->
         <preference name="SplashScreen" value="splash" />

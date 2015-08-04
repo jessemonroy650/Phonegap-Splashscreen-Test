@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>PhoneGap Network Information Test</title>
+    <title>PhoneGap Splash Screen Test</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="buttons.css" />
     <style>
@@ -20,8 +20,6 @@
     var mediaTimer = null;
     // Wait for PhoneGap to load
     document.addEventListener("deviceready", onDeviceReady, false);
-    // Get rid of 300ms delay 
-    document.addEventListener('DOMContentLoaded', function() { FastClick.attach(document.body); }, false);
     //
     function splash(time) {
         navigator.splashscreen.show();
@@ -32,9 +30,9 @@
     }
     //
     function onDeviceReady() {
-        // hide Exit button. They don't have one on iOS devices.
         if (device.platform === "iOS") {
             //alert("got iOS");
+            // hide Exit button. They don't have one on iOS devices.
             // http://www.mzcart.com/javascript-how-to-addremove-css-class-from-a-dom-element/
             document.getElementById('exitApp').classList.add("hidden");
             /* deals with post-iOS-7 change that covers the status bar */
@@ -44,7 +42,10 @@
             setTimeout(function() {
                 navigator.splashscreen.hide();
             }, 2000);
-        };
+        } else if (device.platform == 'Android') {
+            // Get rid of 300ms delay 
+            document.addEventListener('DOMContentLoaded', function() { FastClick.attach(document.body); }, false);
+        }
         // Setup the button click
         thePlace = document.getElementById('splash');
         thePlace.addEventListener('click', function(e) {
@@ -58,7 +59,10 @@
     </script>
 </head>
 <body onload="onLoad()">
-<div id=header class="button button-block button-large"><img align=left src=favicon-48x48.png>Splash Screen</div>
+<div id=header class="button button-block button-large">
+    <img align=left src=favicon-48x48.png>
+    Splash Screen
+</div>
 
 <button id=exitApp onclick='navigator.app.exitApp()' class="button button-pill button-primary button-large">Exit</button>
 
