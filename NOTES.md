@@ -1,5 +1,6 @@
 # NOTES #
-Date: 2015-03-16
+Date: 2015-03-16<br>
+Last Update: 2016-01-08
 
 ## Docs ##
 
@@ -12,6 +13,12 @@ https://github.com/phonegap/phonegap-start/blob/master/www/config.xml
 ## Sizes ##
 
 https://github.com/phonegap/phonegap/wiki/App-Splash-Screen-Sizes
+
+## Requirements ##
+
+https://developer.apple.com/library/ios/releasenotes/General/RN-iOSSDK-9.0/
+
+> iOS 9 enforces the [UILaunchImages](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW28) requirement; apps can no longer declare the same launch image to support different interface orientations
 
 ## BUGS ##
 Date: 2015-07-16
