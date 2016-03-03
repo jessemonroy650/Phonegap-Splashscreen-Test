@@ -31,9 +31,6 @@ Samsung SCH-R720     | 320x480-mdpi      | 2.3.4
 ####Reference for iOS devices and screen sizes####
 http://www.idev101.com/code/User_Interface/launchImages.html
 
-####On filesnames and how they are found for iOS####
-http://drekka.github.io/2012/07/30/iOS-icons-and-splash-screens.html
-
 This article suggests your can give the images any filename you want. When I finally got mine to work, I tested that. The answer is: *Yes you can name the images any filename you want.* My iPodTouch had an actual pixel size of 640x1136.
 
 Phonegap Supported Platforms | Yes (X), No (-) or Quirk (Q)
